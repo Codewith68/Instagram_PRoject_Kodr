@@ -9,6 +9,11 @@ const authRouter = Router();
 
 authRouter.post("/register",upload.single("profilePic"),registervaliator, register);
 authRouter.post("/login",loginvalidator,login);
+
+
+
+
+
 // GET /api/auth/google
 authRouter.get("/google",
   passport.authenticate("google", {

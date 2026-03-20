@@ -36,7 +36,7 @@ export async function register(req,res){
 
     const userResponse = {
         _id: user._id,
-        username: user.username,
+        username: user.username,    
         email: user.email,
         fullname: user.fullname,
         profilePic: user.profilePic,
@@ -85,6 +85,7 @@ export async function login (req,res){
             username: user.username,
             email: user.email,
             fullname: user.fullname,
+            profilePic: user.profilePic,
         }
         const token=jwt.sign({
             id:user._id,

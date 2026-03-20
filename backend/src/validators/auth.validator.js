@@ -32,7 +32,6 @@ export const registervaliator=[
             throw new Error("password must contain at least one uppercase, one lowercase, one number, and one special character");
         }
         return true;
-
 }),
     body("fullname")
     .notEmpty().withMessage("fullname is required")
